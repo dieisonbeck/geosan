@@ -18,5 +18,5 @@
             "Geosan\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev-0.0.0.1"
 }
