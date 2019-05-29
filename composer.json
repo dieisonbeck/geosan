@@ -1,5 +1,5 @@
 {
-    "name": "georde/geosan",
+    "name": "dieisonbeck/geosan-cnhapp",
     "description": "Tools CLI your CodeIgniter",
     "type": "project",
     "require": {
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Georde Henrique",
-            "email": "georde.henrique@gmail.com"
+            "name": "Dieison Beck",
+            "email": "dieisonbeck@gmail.com"
         }
     ],
     "autoload":{
