@@ -1,7 +1,7 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-class Migration_REPLACE_NAME_HERE extends CI_Migration {
-
+defined('BASEPATH') or exit('No direct script access allowed');
+class Migration_REPLACE_NAME_HERE extends CI_Migration
+{
     public function up()
     {
         $this->dbforge->add_field(
@@ -9,28 +9,26 @@ class Migration_REPLACE_NAME_HERE extends CI_Migration {
                 'id' => [
                     'type' => 'INT',
                     'constraint' => 10,
-                    'unsigned' => TRUE,
-                    'auto_increment' => TRUE
+                    'unsigned' => true,
+                    'auto_increment' => true
                 ],
                 'created_at' => [
                     'type' => 'TIMESTAMP',
-                    'null' => TRUE
+                    'null' => true
                 ],
                 'updated_at' => [
                     'type' => 'TIMESTAMP',
-                    'null' => TRUE
+                    'null' => true
                 ],
             ]
         );
 
-        $this->dbforge->add_key('id', TRUE);
-        $this->dbforge->create_table("REPLACE_NAME_TABLE",TRUE);
-
+        $this->dbforge->add_key('id', true);
+        $this->dbforge->create_table("REPLACE_NAME_TABLE", true);
     }
 
     public function down()
     {
         $this->dbforge->drop_table("REPLACE_NAME_TABLE");
     }
-
 }
