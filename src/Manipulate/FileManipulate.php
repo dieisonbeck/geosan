@@ -78,7 +78,7 @@ class FileManipulate
 
         if (!is_null($this->fileReplace) && !is_null($this->fileReplaceTable)){
             $fileContent = str_replace($this->fileReplace, $this->fileName, $fileContent);
-            $fileContent = str_replace($this->fileReplaceTable, strtolower($this->fileName), $fileContent);
+            $fileContent = str_replace($this->fileReplaceTable, str_replace('_model','',strtolower($this->fileName)), $fileContent);
         }
 
 
